@@ -1,0 +1,25 @@
+<body>
+<h1>Eat-Da-Burger!</h1>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    <div>
+      {{!-- <pre>{{this.id}}{{this.burger_name}}</pre> --}}
+    </div>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+{{!-- <div class="form-group">
+  <iframe src="_" height="100" width="200"></iframe>
+  </div> --}}
+<div class="form-group">
+  <label for="bu">Add a burger:</label>
+    <input type="text" id="bu" name="burger_name">
+  </div>
+<br> 
+<br>
+  <button type="submit">Submit</button>
+</form>
+</body>
